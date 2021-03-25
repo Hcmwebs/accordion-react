@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+@use '../base/typography' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $backgroundColor;
+  width: 100vw;
+  font-family: $fontStack;
+  font-size: $fontSize;
+  @include flexCenter(row);
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 0;
+  @include flexCenter(column);
+}

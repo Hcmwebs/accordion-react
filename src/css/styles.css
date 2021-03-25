@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(233, 41, 41, 0.877);
+  width: 100vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  margin: 3rem auto;
+  position: sticky;
+  top: 0;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #effffa;
+}
+
+main {
+  width: 100%;
+  max-width: 360px;
+  padding: 2rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #acbed8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.accordion {
+  width: 100%;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 20px 1px #978b82;
+  padding: 0.2rem;
+  color: #463f3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+.accordion:hover {
+  background-color: #d5dbf0;
+}
+.accordion__header {
+  background-color: #e8ebf7;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.accordion__header h2 {
+  font-size: 1.2rem;
+}
+.accordion__header span {
+  font-size: 1.5rem;
+  margin-left: auto;
+  padding: 0.3rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.accordion__header span:hover {
+  transform: scale(0.98);
+}
+.accordion__body {
+  width: 100%;
+  font-size: 1rem;
+  height: 0;
+  opacity: 0;
+  padding: 0rem 1rem;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.75s ease-in-out;
+}
+.accordion__body p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.active {
+  height: 120px;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */

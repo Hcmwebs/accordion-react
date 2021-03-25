@@ -1,0 +1,64 @@
+@use '../abstracts/' as *;
+
+.accordion {
+  width: 100%;
+  border-radius: 0.3rem;
+  box-shadow: $boxShadow;
+  padding: 0.2rem;
+  color: $textPrimaryColor;
+  @include flexCenter(column);
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background-color: darken($accordionBgColor, 5);
+  }
+
+  &__header {
+    background-color: $accordionBgColor;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+
+    @include flexSpaceBetween(row);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+      margin-left: auto;
+      padding: 0.3rem;
+      cursor: pointer;
+      @include grid(center);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(0.98);
+      }
+    }
+  }
+  &__body {
+    width: 100%;
+    font-size: 1rem;
+    height: 0;
+    opacity: 0;
+    padding: 0rem 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: lighten($accordionBgColor, 10);
+    transition: all 0.75s ease-in-out;
+
+    p {
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.active {
+  height: 120px;
+  opacity: 1;
+}
