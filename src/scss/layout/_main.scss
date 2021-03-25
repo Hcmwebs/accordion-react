@@ -4,7 +4,6 @@ main {
   width: 100%;
   max-width: 360px;
   padding: 2rem 1rem;
-  border-radius: 0.3rem;
   background-color: $mainBgColor;
   @include flexCenter(column);
   gap: 0.5rem;

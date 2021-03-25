@@ -46,7 +46,6 @@ main {
   width: 100%;
   max-width: 360px;
   padding: 2rem 1rem;
-  border-radius: 0.3rem;
   background-color: #acbed8;
   display: flex;
   justify-content: center;
@@ -56,19 +55,14 @@ main {
 }
 
 .accordion {
-  width: 100%;
-  border-radius: 0.3rem;
-  box-shadow: 0 1px 20px 1px #978b82;
-  padding: 0.2rem;
+  width: 95%;
+  padding: 0.3rem;
   color: #463f3a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: all 0.5s ease-in-out;
-}
-.accordion:hover {
-  background-color: #d5dbf0;
 }
 .accordion__header {
   background-color: #e8ebf7;
@@ -81,6 +75,9 @@ main {
   flex-direction: row;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+.accordion__header:hover {
+  background-color: #d1d7ef;
 }
 .accordion__header h2 {
   font-size: 1.2rem;

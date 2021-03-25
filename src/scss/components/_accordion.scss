@@ -1,27 +1,24 @@
 @use '../abstracts/' as *;
 
 .accordion {
-  width: 100%;
-  border-radius: 0.3rem;
-  box-shadow: $boxShadow;
-  padding: 0.2rem;
+  width: 95%;
+  padding: 0.3rem;
   color: $textPrimaryColor;
   @include flexCenter(column);
   transition: all 0.5s ease-in-out;
-
-  &:hover {
-    background-color: darken($accordionBgColor, 5);
-  }
 
   &__header {
     background-color: $accordionBgColor;
     width: 100%;
     margin: auto;
     padding: 1rem;
-
     @include flexSpaceBetween(row);
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: darken($accordionBgColor, 6);
+    }
 
     h2 {
       font-size: 1.2rem;
